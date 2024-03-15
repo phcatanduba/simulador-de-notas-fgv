@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>FGV</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	<body>
+		<header>
+			<div class="nav">
+				<img src="header.png">
+			</div>
+		</header>
+
+
+		<main>
+      <h1 class="info">Saiba a nota mínima necessária da Avaliação Final para ser aprovado.</h1>
+			<section class="container">
+					<form  id="tabela">
+  <div class="input-table">
+	<div class="tabela-nota flexing" id="tabela-nota">
+  <ul>
+    <div class="materia">Atividades</div>
+    <li>
+      <div class="atividade">QUESTÃO CENTRAL</div>
+    </li>
+    <li>
+      <div class="atividade">Módulo 3: JOB TASK 1</div>
+		</li>
+    <li>
+      <div class="atividade">Módulo 5: JOB TASK 2</div>
+    </li>
+    <li>
+      <div class="atividade">Módulo 7:HARVARD CASE STUDY</div>
+							
+    </li>
+  </ul>
+    <ul id="tabela-resultado" class="tabela-resultado">
+    <div class="nota-title nota">Nota</div>
+    <li>
+      <div class="nota"><input id="nota1" name="nota" type="text" onkeypress="return apenasNumero();" maxlength="3" pattern="[0-9.]+$" placeholder="Digite uma nota até 10 pontos... " class="campo campo-medio" required></div>
+    </li>
+    <li>
+      <div class="nota"><input id="nota2" name="nota" maxlength = "3" onkeypress="return apenasNumero();" type="text"pattern="[0-9.]+$" placeholder="Digite uma nota até 20 pontos... " class="campo campo-medio" required></div>
+    </li>
+    <li>
+      	<div class="nota"><input id="nota4" name="nota" type="text" maxlength = "3" onkeypress="return apenasNumero();" pattern="[0-9.]+$" placeholder="Digite uma nota até 30 pontos... " class="campo campo-medio" required></div>
+    </li>
+    <li>
+      <div class="nota"><input required id="nota7" name="nota" type="text" maxlength = "3" onkeypress="return apenasNumero();" pattern="[0-9.]+$" placeholder="Digite uma nota até 40 pontos... " class="campo campo-medio" ></div>
+    </li>
+  </ul>
+</div>
+<button id="calcular" class="botao bto-principal">Calcular</button>
+          </div>
+
+
+					</form>
+				<div id="tabela-resultado" class="tabela-resultado mostra-resultado">
+					<ul class="flexing">
+							<li class="title-result result">Avaliação Intermediária</li>
+							<li class="title-result result">Nota Necessária na Avaliação Online</li>
+            <li class="title-result result">Nota Final na disciplina</li>
+					</ul>
+					<div class="notas">
+            <ul class="flexing">
+              <li>
+                <input class="somaAI result" maxlength = "5" onkeypress="return apenasNumero();" pattern="[0-9.]+$"></input>
+            </li>
+							<li>
+                <input class="resultado result" maxlength = "5" onkeypress="return apenasNumero();" pattern="[0-9.]+$"></input>
+            </li>
+              <li>
+                <input class="nota-final result" maxlength = "5" onkeypress="return apenasNumero();" pattern="[0-9.]+$"></input>
+            </li>
+            </ul>
+						</div>
+				</div>
+			</section>
+		</main>
+    <script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
